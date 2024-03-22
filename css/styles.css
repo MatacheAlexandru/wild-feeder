@@ -38,6 +38,9 @@ display: flex;
 }
 
 .nav-menu {
+    background-image: url("/images/weed.jpg");
+    background-size: 150px;
+    background-blend-mode: overlay;
     width: 100%;
     display: flex;
     align-items: center;
@@ -46,7 +49,7 @@ display: flex;
     padding-right: 20px;
 }
 
-.menu button,
+.dropdown button,
 .favorite button,
 .shoping button,
 .search button,
@@ -62,34 +65,44 @@ display: flex;
     flex-direction: column;
 }
 
-.menu svg {
+.dropdown svg {
     height: 36px;
     width: 54px;
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    opacity: 5;
-    
-    transform: translateY(-13px);
-    
-    transition: opacity 2s ease, transform 2s ease ; 
-    /* Tranzitie pentru opacitate si transformare */
+    top: calc(100% + 5px);
+    left: -74px;
+    background-color: rgba(96, 236, 152, 0.5);
+    max-width: 454px;
+    padding: 8px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    transition: max-height 2s ease;
+    max-height: 0;
+    margin: 0;
 }
 
 .dropdown-content.show {
     display: block;
-    opacity: 50;
-    transform: translateY(9) ;
-    
     
 }
 
-#menuIcon.rotate {
+.dropdown-content li {
+    padding: 8px 16px;
+    list-style: none;
+}
+
+
+
+#menuButton.rotate {
     transform: rotate(360deg);
     transition: transform 1.3s ease;
 }
@@ -120,11 +133,16 @@ display: flex;
     display: flex;
     align-items: center;
     background-color: rgba(96, 236, 152, 0.5);
+    background-image: url("/images/weed.jpg");
+    background-size: 150px;
+    background-blend-mode: overlay;
     
  }
 
+ 
+
  .section2 {
-    background-color: rgb(121, 13, 223, 0.5);
+    background-color: rgba(241, 240, 241, 0.5);
     margin-top: 45px;
     width: 100%;
     height: 1000px; /* dupa ce se baga elemente in sectiune se aplica height:100%*/
@@ -137,6 +155,9 @@ display: flex;
 
  .section3 {
     background-color:rgba(96, 236, 152, 0.5);
+    background-image: url("/images/weed.jpg");
+    background-size: 150px;
+    background-blend-mode: overlay;
     width: 100%;
     height: 50px;
     display: flex;

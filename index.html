@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="background ">
     <header class="header container">
@@ -17,18 +17,16 @@
             </button>
           </div>
         <div class="nav-menu">
-          <div class="menu">
-            <button id="menuButton">
-              <svg id="menuIcon">
-                <use href="/icons/icons-site.svg#icon-align-justified"></use>
-              </svg>
-            </button>
-            <ul class="dropdown-content" id="dropdownContent">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-            </ul>
+          <div class="dropdown" id="dropdown">
+          <button id="menuButton">
+            <svg><use xlink:href="/icons/icons-site.svg#icon-align-justified"></use></svg>
+          </button>
+          <div class="dropdown-content" id="dropdownContent">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
           </div>
+        </div>
           <div class="favorite">
             <button>
             <svg>
