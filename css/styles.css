@@ -38,7 +38,7 @@ display: flex;
 }
 
 .nav-menu {
-    background-image: url("/images/weed.jpg");
+    background-image: url("../images/weed.jpg");
     background-size: 150px;
     background-blend-mode: overlay;
     width: 100%;
@@ -133,7 +133,7 @@ display: flex;
     display: flex;
     align-items: center;
     background-color: rgba(96, 236, 152, 0.5);
-    background-image: url("/images/weed.jpg");
+    background-image: url("../images/weed.jpg");
     background-size: 150px;
     background-blend-mode: overlay;
     
@@ -155,7 +155,7 @@ display: flex;
 
  .section3 {
     background-color:rgba(96, 236, 152, 0.5);
-    background-image: url("/images/weed.jpg");
+    background-image: url("../images/weed.jpg");
     background-size: 150px;
     background-blend-mode: overlay;
     width: 100%;
