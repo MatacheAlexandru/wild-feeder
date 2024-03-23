@@ -1,132 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Wild Feeder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   </head>
-  <body class="background ">
-    <header class="header container">
-      <section class="section1">
-        <div class="logo">
-          <button>
-            <image href="index.html" src="./images/logo.png" alt="logo" width="70" height="45"
-            />
-            </button>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container">
+        <div class="row v-center">
+          <div class="header-item item-left">
+            <div class="logo">
+              <a href="#"><img src="/images/logo.png" alt="logo" /></a>
+            </div>
           </div>
-        <div class="nav-menu">
-          <div class="dropdown" id="dropdown">
-           <button id="menuButton" class="menu-button">
-             <svg><use xlink:href="./icons/icons-site.svg#icon-align-justified"></use></svg>
-            </button>
-            <div class="dropdown-content" id="dropdownContent">
-                        <table>
-              <tbody>
-                <tr class="row" id="row1">
-                    <td>Row 1</td>
-                    <td class="row-dropdown"> 
-                        <div class="dropdown-for-row">
-                            Conținut dropdown pentru Row 1
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row" id="row2">
-                    <td>Row 2</td>
-                    <td class="row-dropdown"> 
-                        <div class="dropdown-for-row">
-                            Conținut dropdown pentru Row 2
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row" id="row3">
-                    <td>Row 3</td>
-                    <td class="row-dropdown"> 
-                        <div class="dropdown-for-row">
-                            Conținut dropdown pentru Row 3
-                        </div>
-                    </td>
-                </tr>
-                <tr class="row" id="row4">
-                    <td>Row 4</td>
-                    <td class="row-dropdown"> 
-                        <div class="dropdown-for-row">
-                            Conținut dropdown pentru Row 4
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-             </table>
+          <!-- menu start here -->
+          <div class="header-item item-center">
+            <div class="menu-overlay"></div>
+            <nav class="menu">
+              <div class="mobile-menu-head">
+                <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="menu-main">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">New <i class="fa fa-angle-down"></i></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img src="/images/img1.jpg" alt="new Product" />
+                        <h4 class="title">Orange & Squid</h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img src="/images/img2.jpg" alt="new Product" />
+                        <h4 class="title">Krill & Crab</h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img src="/images/img3.jpg" alt="new Product" />
+                        <h4 class="title">Chocolate</h4>
+                      </a>
+                    </div>
+                    <div class="list-item text-center">
+                      <a href="#">
+                        <img src="/images/img4.jpg" alt="new Product" />
+                        <h4 class="title">Tutti Frutti</h4>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <h4 class="title">Men's Fashion</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                      <h4 class="title">Beauty</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4 class="title">Women's Fashion</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                      <h4 class="title">Furniture</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4 class="title">Home, Kitchen</h4>
+                      <ul>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                        <li><a href="#">Product List</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <img src="#" alt="shop" />
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Blog <i class="fas fa-angle-down"></i></a>
+                  <div class="sub-menu single-column-menu">
+                    <ul>
+                      <li><a href="#">Standard Layout</a></li>
+                      <li><a href="#">Grid Layout</a></li>
+                      <li><a href="#">single Post Layout</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                  <div class="sub-menu single-column-menu">
+                    <ul>
+                      <li><a href="#">Login</a></li>
+                      <li><a href="#">Register</a></li>
+                      <li><a href="#">Faq</a></li>
+                      <li><a href="#">404 Page</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- menu end here -->
+          <div class="header-item item-right">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <!-- mobile menu trigger -->
+            <div class="mobile-menu-trigger">
+              <span></span>
+            </div>
           </div>
         </div>
-          <div class="favorite">
-            <button>
-            <svg>
-              <use href="./icons/icons-site.svg#icon-heart"></use>
-            </svg>
-            <h4>Favorite</h4>
-            </button>
-          </div>
-          <div class="shoping">
-            <button>
-            <svg>
-              <use href="./icons/icons-site.svg#icon-shopping-cart"></use>
-            </svg>
-            <h4>Shoping</h4>
-            </button>
-          </div>
-          <div class="search">
-            <button>
-            <svg>
-              <use href="./icons/icons-site.svg#icon-search"></use>
-            </svg>
-            <h4>Search</h4>
-            </button>
-          </div>
-          <div class="acount">
-            <button>
-            <svg>
-              <use href="./icons/icons-site.svg#icon-user"></use>
-            </svg>
-           <h4>Login</h4> 
-           </button>
-          </div>
-          </div>
-        </div>
-      </section>
+      </div>
     </header>
-    <main>
-      <section class="section2">
-        
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="logo">
-          <button>
-            <image href="index.html" src="./images/logo.png" alt="logo" width="70" height="45"
-            />
-            </button>
-          </div>
-      <section class="section3">
-        <div class="phone">
-          <button>
-            <svg>
-              <use href="./icons/icons-site.svg#icon-phone"></use>
-            </svg>
-            <h4>Phone</h4>
-            </button>
-          </div>
-          <div class="email">
-            <button>
-            <svg>
-              <use href="./icons/icons-site.svg#icon-envelope"></use>
-            </svg>
-            <h4>Email</h4>
-            </button>
-          </div>
-      </section>
-    </footer>
-    <script src="java-script/h1.js"></script>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <section class="banner-section"></section>
+    <!-- banner end -->
+
+    <script src="java-script/script.js"></script>
   </body>
 </html>
