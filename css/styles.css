@@ -27,7 +27,7 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    background-image: url("../images/weed.jpg");
+    background-image: url("https: //matachealexandru.github.io/wild-feeder/images/weed.jpg");
     background-size: 500m;
     background-repeat: repeat-x;
     background-position-y: -80px;
@@ -198,7 +198,7 @@ a {
 
 /* banner section */
 .banner-section {
-    background-image: url('https: //matachealexandru.github.io/wild-feeder/images/weed.jpg');
+    background-image: url('../img/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 700px;
