@@ -229,7 +229,7 @@ font-family: "Courier New", Courier, monospace;
 
 
 main .container {
-    background-color: rgba(230, 230, 230, 0.5);   
+       
 }
 .position-search {
     height: 100%;
@@ -245,10 +245,10 @@ main .container {
     /* Modificăm lățimea pentru a face bara rotundă */
     cursor: pointer;
     padding: 0;
-    background: #ffffff;
+    background: #f0eeee;
     border-radius: 30px;
     align-items: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     position: relative;
     display: flex;
     
@@ -257,7 +257,7 @@ main .container {
 }
 
 .box a .fas {
-    color: #aaa49f;
+    color: #63605d;
     font-size: 20px;
     padding-left: 10px;
 }
@@ -338,7 +338,7 @@ a:visited {
 }
 
 .slider-item {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .12);
+    
     display: none;
     height: 320px;
     left: 0;
@@ -347,7 +347,7 @@ a:visited {
     top: 0;
     width: 320px;
     cursor: pointer;
-    border: 5px solid #120e01;
+    
 }
 
 .indicators {
@@ -360,28 +360,31 @@ a:visited {
 }
 
 .indicators li {
-    color: #0582e1;
     float: left;
     height: 16px;
     margin-right: 8px;
     text-align: center;
     width: 16px;
+    
 }
 
 .indicators li:last-child {
     margin: 0;
+    
 }
 
 .indicators a {
-    background: #aaa49f;
+    background: #696867;
     border-radius: 8px;
     display: inline-block;
     height: 16px;
     width: 16px;
+    
 }
 
 .indicators .active a {
-    background: #000000;
+    background: #70c442;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 
 }
 
@@ -685,16 +688,10 @@ a:visited {
     }
 
         .slider-item {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .12);
-            display: none;
             height: 200px;
             left: 0;
-            position: absolute;
-            text-align: center;
             top: 0;
             width: 200px;
-            cursor: pointer;
-            border: 5px solid #120e01;
         }
                 .img01 {
                     background-image: url(../images/img5.jpg);
